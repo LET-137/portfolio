@@ -1,6 +1,6 @@
 body {
-  /* color: #fff;
-  background-color: #111; */
+  color: #fff;
+  background-color: #111;
   padding-left: 5%;
   padding-right: 5%;
   font-family: "Inter", sans-serif;
@@ -12,14 +12,16 @@ body {
   display: flex;
 }
 .herder {
-  padding-top: 5%;
-  padding-bottom: 5%;
-  height: 15%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  /* height: 15%; */
 }
 .title {
   font-size: 50px;
 }
-
+.title.spase {
+  display: inline-block;
+}
 /* ナビゲーション */
 .navigation {
   position: fixed;
@@ -47,9 +49,9 @@ body {
 .column-container {
   padding-left: 20%;
 }
-span {
+/* span {
   display: inline-block;
-}
+} */
 .page {
   display: none;
 }
@@ -125,7 +127,19 @@ a:visited {
 .pixiv-icon {
   padding-left: 0.5%;
 }
-
+.works-list {
+  display: flex;
+  gap: 10%;
+  flex-wrap: wrap;
+}
+.works-item {
+  flex: 1;
+}
+.works-item img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
 /* レスポンシブ */
 @media screen and (max-width: 800px) {
   #fram {
